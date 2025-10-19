@@ -1,0 +1,39 @@
+#GreetingsCard:nth-child(1) {
+  width: 300px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial, sans-serif';
+  background-color: #f7c1c1;
+}
+
+#GreetingsCard:nth-child(2) {
+  width: 300px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial, sans-serif';
+  background-color: #c1f7f4;
+}
+
+#GreetingsCard:nth-child(3) {
+  width: 300px;
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial, sans-serif';
+  background-color: #d5f7c1;
+}
+
+.greetingscard-featured {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
