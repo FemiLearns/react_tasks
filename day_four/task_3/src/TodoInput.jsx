@@ -27,7 +27,7 @@ function TodoInput({ onAdd }) {
                 aria-label="New todo"
                 style={{ flex: 1, padding: "8px 10px" }}
             />
-            <button type="button" onClick={submit} style={{ padding: "8px 12px" }}>
+            <button type="button" onClick={() => submit()} style={{ padding: "8px 12px" }}>
                 Add
             </button>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TemperatureApp from "./TemperatureApp";
 
-function CelsiusInput(){
+function CelsiusInput(temperature, setTemperature){
     
     function  handleChange (e) {
         setTemperature(e.target.value);
