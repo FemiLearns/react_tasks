@@ -1,0 +1,40 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.name-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  font-weight: 600;
+  justify-content: space-around;
+  justify-content: space-between; 
+  align-items: center;    
+  
+}
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: 2px solid currentColor;
+  border-radius: 0.25em;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
