@@ -13,56 +13,99 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.grade-container {
+  max-width: 650px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
 }
 
-body {
-  margin: 0;
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.button-group {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.button-group button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  background-color: #e0e0e0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.button-group button.pass {
+  color: #0b7300;
+}
+
+.button-group button.fail {
+  color: #a40000;
+}
+
+.button-group button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-list li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.student-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.student-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.student-grade {
+  font-style: italic;
+  color: #444;
+}
+
+.student-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.pass {
+  color: #0b7300;
+}
+
+.status.fail {
+  color: #a40000;
+}
+
+.summary {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
 }
