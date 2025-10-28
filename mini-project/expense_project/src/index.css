@@ -1,0 +1,61 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #090909;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #4f4d4d;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+}
+
+.form input, .form select, .form button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.filter button {
+  margin: 5px;
+}
+
+.filter .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.stats {
+  background: #1d1d1d;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
