@@ -1,16 +1,70 @@
-# React + Vite
+App.jsx (main - holds all state)
+├── Header.jsx (title, date)
+├── AddExpenseForm.jsx (form to add expenses)
+├── CategoryFilter.jsx (filter buttons)
+├── ExpenseStats.jsx (statistics display)
+├── ExpenseList.jsx (maps through expenses)
+│   └── ExpenseItem.jsx (individual expense)
+└── ExpenseTracker.css (all styles)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ⚙ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+1. *Add Expenses*
+   - Input: description, amount, and category  
+   - Categories: Food, Transport, Bills, Entertainment, Others  
+   - Validation ensures no empty fields or zero amounts  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. *Display Expenses*
+   - View all expenses in a list  
+   - Each shows: description, amount (₦), category, and date  
+   - Category-based color coding  
 
-## Expanding the ESLint configuration
+3. *Manage Expenses*
+   - Edit and delete existing expenses  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. *Filter by Category*
+   - Quickly filter to show expenses in specific categories  
+
+5. *Statistics*
+   - Total amount spent  
+   - Number of expenses  
+   - Highest single expense  
+   - Breakdown by category  
+
+
+
+
+### ExpenseTracker.jsx
+- The main component that holds all states (expenses, filters, stats).
+- Passes data and handlers down to child components via props.
+
+### AddExpenseForm.jsx
+- Handles adding a new expense.
+- Validates inputs and sends data to App.jsx.
+
+### ExpenseList.jsx & ExpenseItem.jsx
+- Display the list of expenses.
+- ExpenseItem supports edit and delete actions.
+
+### CategoryFilter.jsx
+- Lets you select categories to filter expenses.
+
+### ExpenseStats.jsx
+- Displays totals and summary statistics.
+
+### Header.jsx
+- Shows the app title and current date.
+
+### index.css
+- Handles all styles (colors, layout, responsiveness).
+
+---
+
+## 💻 Technologies Used
+- *React.js* – Frontend framework  
+- *JavaScript (ES6+)*  
+- *CSS3* – External stylesheet for layout and styling  
+- *Date API* – For timestamps

@@ -32,7 +32,9 @@ body {
   text-align: center;
 }
 
-.form input, .form select, .form button {
+.form input,
+.form select,
+.form button {
   padding: 8px;
   margin: 5px;
 }
@@ -51,6 +53,11 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   padding: 8px 0;
+  background-color: rgb(66, 66, 66);
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  align-items: start;
 }
 
 .stats {
@@ -58,4 +65,37 @@ body {
   padding: 10px;
   border-radius: 5px;
   margin: 10px 0;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 20px auto;
+    background: #4f4d4d;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    justify-self: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .descr,
+  .amt {
+    width: 95%;
+  }
+
+  .select {
+    width: 100%;
+  }
+
 }

@@ -7,9 +7,9 @@ import ExpenseList from "./ExpenseList";
 import "./index.css";
 
 const SAMPLE_EXPENSES = [
-  { id: 1, description: "Lunch at Mama Put", amount: 1500, category: "Food", date: "2025-01-15" },
-  { id: 2, description: "Uber to office", amount: 800, category: "Transport", date: "2025-01-16" },
-  { id: 3, description: "Electricity bill", amount: 5000, category: "Bills", date: "2025-01-10" },
+  { id: 1, description: "Breakfast at Burger King", amount: 1500, category: "Food", date: "2025-01-15" },
+  { id: 2, description: "Okada to Ai Fellowship",   amount: 800, category: "Transport", date: "2025-01-16" },
+  { id: 3, description: "Electricity bill",        amount: 5000, category: "Bills", date: "2025-01-10" },
 ];
 
 function ExpenseTracker() {
